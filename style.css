@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252a;
+  }
+
+  .logo {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+  }
+
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+    font-family: 'Varela Round', sans-serif;
+  }
+  
+  .nav__links li a:hover {
+    color: #0088a9;
+  }
+  
+  .cta {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    font-family: 'Varela Round', sans-serif;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  /* Mobile Nav */
+  
+  .menu {
+    display: none;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 22px;
+    display: block;
+    transition: color 0.3s ease 0s;
+    font-family: 'Varela Round', sans-serif;
+  }
+
+  #conatct-btn-mobile {
+    background-color: #0088a9;
+    width: 220px;
+    height: 55px;
+    color: #edf0f1;
+    border-radius: 50px;
+    border: none;
+    margin: 40px;
+    transition: background-color 0.3s ease 0s;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 22px;
+  }
+
+  #conatct-btn-mobile:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #0088a9;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+  }
+
+.overlay__content li{
+  list-style: none;
+}
+
+.Main {
+  background-image: url('https://bit.ly/3jGERJe');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Varela Round', sans-serif;
+  padding-top: 120px;
+}
+
+.line{
+  width: 45%;
+  margin: 20px auto;
+  display: block;
+  border-bottom: #60E79D solid 5px;
+}
+
+#python {
+    padding-top: 35px;
+    font-size: 90px;
+    color: #CCCCCC;
+    transition: color 0.3s ease 0s;
+}
+
+#python:hover {
+    color: #27384c;
+}
+
+#javascript {
+    padding-top: 35px;
+    font-size: 90px;
+    color: #CCCCCC;
+    transition: color 0.3s ease 0s;
+}
+
+#javascript:hover {
+    color: rgb(255, 255, 75);
+}
+
+#css {
+    padding-top: 35px;
+    font-size: 90px;
+    color: #CCCCCC;
+    transition: color 0.3s ease 0s;
+}
+
+#css:hover {
+    color: #1E90FF;
+}
+
+.descrip {
+    margin: 15px;
+}
+
+.contact {
+    padding-top: 10px;
+    width: 100%;
+    height: 330px;
+    background-color: #474747;
+}
+
+.title3 {
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Varela Round', sans-serif;
+    margin: 20px;
+}
+
+::placeholder {
+    text-align: right;
+    color: #424242;
+    font-family: 'Assistant', sans-serif;
+}
+
+.adistory {
+    width: 100%;
+    height: 600px;
+    background-color: #1d1d1d;
+}
+
+.social-menu ul {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    text-align: center;
+    transition: background-color 0.3s ease 0s;
+}
+
+.social-menu ul li a:hover {
+  background-color: #00BFFF;
+}
+
+#icon {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    bottom: -5px;
+}
+
+.line3{
+    width: 40%;
+    margin: 20px auto;
+    display: block;
+    border-bottom: tomato solid 5px;
+}
+
+.mystory{
+    color: gray;
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+  }
+
+
+.sumbit-btn {
+    width: 400px;
+    height: 40px;
+    background-color: #00BFFF;
+    border: none;
+    margin: 40px auto;
+    display: block;
+    color: #fff;
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease 0s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+}
+
+.sumbit-btn:hover {
+    background-color: #009fd4;
+}
+
+.info input {
+  display: block;
+  margin: 20px auto;
+  width: 380px;
+  height: 32px;
+  text-align: right;
+  padding-right: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  border-radius: 4px;
+  font-family: 'Assistant', sans-serif;
+  background-color: rgb(240, 240, 240);
+}
+
+.info input:focus {
+  border-color:  #2773ff;
+  box-shadow: 0 0 8px 0 #2773ff;
+  background-color: rgb(247, 247, 247);
+}
+
+
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  .cards {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    background-color: #1d1d1d;
+    width: 100%;
+    height: 300px;
+    padding-top: 20px;
+    font-family: 'Assistant', sans-serif;
+  }
+
+  .card1 {
+    background-color: #6495ED;
+    text-align: center;
+    border-radius: 3px;
+    width: 30%;
+    height: 200px;
+    margin: 10px;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .card2 {
+    background-color: #00BFFF;
+    text-align: center;
+    border-radius: 3px;
+    width: 30%;
+    height: 200px;
+    margin: 10px;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .card3 {
+    background-color: #008080;
+    text-align: center;
+    border-radius: 3px;
+    width: 30%;
+    height: 200px;
+    margin: 10px;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+ 
+  #icon{
+    font-size: 22px;
+    line-height: 40px;
+    color: #fff;
+  }
+
+  .title2 {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Varela Round', sans-serif;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    background-color: #303030;
+    font-size: 30px;
+    font-family: 'Assistant', sans-serif;
+  }
+
+  .name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .name-title {
+    font-size: 35px;
+    font-family: 'Varela Round', sans-serif;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+    .title {
+      font-size: 30px;
+    }
+    .name-title {
+      font-size: 20px;
+    }
+    .slogan{
+      font-size: 15px;
+    }
+    .line{
+      width: 90%;
+    }
+    .cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+    .card1{
+      width: 80%;
+    }
+    .card2{
+      width: 80%;
+    }
+    .card3{
+      width: 80%;
+    }
+
+    .cards { 
+        display: flex;
+        align-items: top;
+        justify-content: center;
+        background-color: #1d1d1d;
+        width: 100%;
+        height: 650px;
+        padding-top: 20px;
+    }
+
+    .adistory{
+      padding-top: 20px;
+      text-align: center;
+      background-color: #1d1d1d;
+      width: 100%;
+      height: 600px;
+    }
+    .footer {
+      font-size: 21px;
+    }
+    .line3{
+      width: 80%;
+    }
+    .mystory{
+      font-size: 15px;
+    }
+    .title{
+        font-size: 23px;
+    }
+    .title2 {
+        font-size: 23px;
+    }
+    .title3 {
+        font-size: 23px;
+    }
+    .sumbit-btn {
+        width: 310px;
+    }
+    .info input {
+      width: 280px;
+    }
+}
